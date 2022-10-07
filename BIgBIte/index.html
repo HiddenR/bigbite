@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Big-Bite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="wrapper">
+      <ul class="nav-container">
+        <li><a href="#main" style="padding-right: 250px">BIG-bite</a></li>
+        <li><a href="#menu-display">MENU</a></li>
+        <li><a href="#about">ABOUT</a></li>
+
+        <li>
+          <a href="order.html" target="_blank"
+            ><span id="order">ORDER NOW!!</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main">
+      <!-- slider -->
+      <div class="slider">
+        <div class="slides">
+          <!-- image-slider -->
+          <div class="slide" id="first">
+            <img src="radio1.JPG" />
+          </div>
+          <div class="slide">
+            <img src="radio2.JPG" />
+          </div>
+          <div class="slide">
+            <img src="radio3.JPG" />
+          </div>
+          <div class="slide t">
+            <img src="radio4.JPG" />
+          </div>
+          <div class="slide">
+            <img src="radio5.JPG" />
+          </div>
+
+          <!-- automatic slider -->
+          <div class="autoslider">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+        </div>
+        <!-- manual slider -->
+        <div class="manual-slider">
+          <!-- radio button -->
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio1"
+            onclick="activeradio()"
+            value="1"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio2"
+            value="2"
+            onclick="activeradio()"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio3"
+            value="3"
+            onclick="activeradio()"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            id="radio4"
+            onclick="activeradio()"
+            value="4"
+          />
+          <input
+            type="radio"
+            name="radio-btn"
+            value="5"
+            id="radio5"
+            onclick="activeradio()"
+          />
+        </div>
+      </div>
+    </main>
+    <!-- burger display -->
+    <div class="menu-display" id="menu-display">
+      <div class="letter">
+        <span id="letter"> Burger</span>
+      </div>
+      <div class="burger-display">
+        <div class="burger-wrapper">
+          <img src="./burger/burger1.png" height="300" width="400" />
+          <span>
+            Chipotle Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="./burger/burger2.png" height="300" width="400" />
+          <span>
+            Double Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="./burger/burger3.png" height="300" width="400" />
+          <span>
+            Bully Boy Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="./burger/burger4.png" height="300" width="400" />
+          <span>
+            Classic Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="./burger/burger5.png" height="300" width="400" />
+          <span>
+            California Burger
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="burger-wrapper">
+          <img src="./burger/burger6.png" height="300" width="400" />
+          <span>
+            California Burger - Double
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+      </div>
+      <div class="letter-dsrink">
+        <span id="letter-dsrink"> Drinks</span>
+      </div>
+
+      <!-- drinks -->
+      <div class="Drinks">
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks1.png" height="300" width="400" />
+          <span>
+            Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks2.png" height="300" width="400" />
+          <span>
+            Iced Caramel Latte Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks3.png" height="300" width="400" />
+          <span>
+            Iced Latte Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks4.png" height="300" width="400" />
+          <span>
+            LiberTea MilkTea 940ml
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks5.png" height="300" width="400" />
+          <span>
+            Iced Mocha Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+        <div class="Drinks-wrapper">
+          <img src="./drinks/drinks6.png" height="300" width="400" />
+          <span>
+            Iced French Vanilla Cold Brew
+            <option value="410" id="price">₱410</option></span
+          >
+        </div>
+      </div>
+    </div>
+    <!-- About -->
+    <div class="about" id="about"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
